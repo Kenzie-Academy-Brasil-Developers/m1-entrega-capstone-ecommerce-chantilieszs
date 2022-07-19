@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Inter:wght@400;600;700&family=Poppins&family=Quicksand:wght@500;600;700&display=swap');
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	
+}
+body {
+    
+}
+#container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 90%;
+    margin: 5px auto;
+}
+header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 5px 4px 0px rgba(165, 163, 163, 0.116);
+    padding-left: 70px;
+}
+header h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 70px; 
+}
+#navBtn {
+    margin-right: 12px;
+    background-color: white;
+}
+#navBtn:hover {
+    transform:scale(1.08);
+}
+#navBtn0 {
+    background-color: white;
+}
+#navBtn0:hover {
+    transform:scale(1.08);
+}
+
+#listaDeProdutos {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+    width: 70%;
+}
+
+#carrinho {
+    width: 30%;
+}
+
+.product {
+    list-style: none;
+    max-width: 29%;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+.product:hover {
+    transform: scale(1.1);
+}
+#product-img {
+    max-width: 100%;
+    background-color: #F5F5F5;
+}
+.product-main{
+    padding: 10px;
+}
+.product-tag {
+    background-color: #37268C;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding: 3px;
+}
+.product-main p {
+    font-size: 14px;
+    color: #242424;
+    margin-bottom: 8px;
+}
+.product-main h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.product-price {
+    color: #2E245E;
+}
+.adicionarCarrinho{
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#pesquisa {
+    width: 65%;
+    height: 40px;
+    margin-top: 20px;
+}
+#btnPesquisa {
+    width: 25%;
+    margin-left: 11px;
+    height: 40px;
+    background-color: #2E245E;
+    color: white;
+}
+.btnCompras {
+    width: 95%;
+    height: 38px;
+    margin-top: 15px;
+    background-color: #2E245E;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 150ms linear;
+    
+}
+.btnCompras:hover {
+    transform: scale(1.02);
+}
+
+#carrinhoMain {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 190px;
+    background-color: #F5F5F5;
+}
+#carrinhoMain h2 {
+    font-size: 24px;
+}
+#carrinhoMain p {
+    font-size: 14px;
+}
