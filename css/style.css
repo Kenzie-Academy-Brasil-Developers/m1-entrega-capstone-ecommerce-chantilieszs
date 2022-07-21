@@ -5,7 +5,8 @@
 	border: 0;
     box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
-	
+	list-style: none;
+    text-decoration: none;
 }
 body {
     
@@ -59,7 +60,6 @@ nav {
 }
 
 .product {
-    list-style: none;
     max-width: 29%;
     margin-right: 25px;
     margin-top: 20px;
@@ -104,6 +104,9 @@ nav {
     height: 40px;
     margin-top: 20px;
 }
+#pesquisa:focus{
+    border: 1px solid #2f4550;
+}
 #btnPesquisa {
     width: 25%;
     margin-left: 11px;
@@ -133,7 +136,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 190px;
+    height: 250px;
     background-color: #F5F5F5;
 }
 #carrinhoMain h2 {
@@ -141,4 +144,84 @@ nav {
 }
 #carrinhoMain p {
     font-size: 14px;
+}
+.carrinhoVazio {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.listaCarrinho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.product-carrinho {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 3px;
+}
+#product-img2{
+    max-width: 100%;
+    height: 100%;
+}
+.container-carrinho {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+.carrinhoMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 8px;
+}
+.titulo-prod-carrinho{
+    font-size: 14px;
+}
+.remover {
+    font-size: 11px;
+    cursor: pointer;
+    
+}
+.valorCarrinho {
+    
+}
+.adicionarCarrinho {
+    cursor: pointer;
+    padding: 5px;
+}
+.adicionarCarrinho:hover {
+    transform:scale(1.08);
+}
+.div-vazio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: end;
+    align-items:center;
+    
+}
+.div-qtd {
+    display: none;
+    width: 95%;
+    height: 85px;
+    background-color: #242424;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.div-qtd p {
+    color:aliceblue;
+
+}
+.valorC {
+    margin-left: 175px;
+}
+.quantidade {
+    margin-left: 165px;
 }

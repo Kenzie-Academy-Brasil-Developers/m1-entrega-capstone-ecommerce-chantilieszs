@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script defer src="js/index.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h2>Weartake</h2>
@@ -21,17 +23,33 @@
     </header>
     <section id="container">
         <ul id="listaDeProdutos">
-           
+
         </ul>
-        <div id="carrinho">
-            <input type="text" name="" id="pesquisa" placeholder="pesquisar...">
-            <input id='btnPesquisa' type="button" value="Pesquisar">
+        <aside id="carrinho">
+            <input type="search" name="" id="pesquisa" placeholder="pesquisar...">
+            <input id='btnPesquisa' type="button" value="pesquisar">
             <button class="btnCompras btnCompras1">Carrinho de compras</button>
             <div id="carrinhoMain">
-                <h2>Carrinho vázio</h2>
-                <p>Adicione itens</p>
+                <div class="div-vazio">
+                    <h2>Carrinho vazio</h2>
+                    <p>adicionar itens</p>
+
+                </div>
+                <div class="container-carrinho">
+                    <ul
+                    class="listaCarrinho">
+                       
+                    </ul>
+                    
+                </div>
+                
             </div>
-        </div>
+            <div class="div-qtd">
+                <p>Quantidade: <span class="quantidade"></span></p>
+                <p>Valor: <span class="valorC"></span></p>
+            </div>
+        </aside>
     </section>
 </body>
+
 </html>
